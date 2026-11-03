@@ -1,0 +1,20 @@
+# Build artifacts and temporary test data
+/dist/
+*.xpi
+*.zip
+*.log
+*.tmp
+
+# Private conversation material (keep outside this repo entirely)
+*complete.txt
+*complete.md
+*file-manifest.csv
+*continuation-packet*.md
+*Continuation_Packet*.md
+/exports/
+/local-data/
+
+# Editor files
+.DS_Store
+*~
+.vscode/

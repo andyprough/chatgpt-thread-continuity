@@ -1,0 +1,10 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const manifest = JSON.parse(fs.readFileSync('manifest.json','utf8'));
+assert.equal(manifest.version,'0.2.3');
+assert.equal(manifest.browser_specific_settings.gecko.strict_min_version,'140.0');
+assert.equal(manifest.browser_specific_settings.gecko_android.strict_min_version,'142.0');
+assert.deepEqual(manifest.browser_specific_settings.gecko.data_collection_permissions.required,['none']);
+assert.equal(manifest.browser_specific_settings.gecko.id,'chatgpt-thread-continuity@local');
+assert.deepEqual(manifest.permissions,['activeTab','scripting']);
+console.log('Manifest compatibility and permission checks passed.');

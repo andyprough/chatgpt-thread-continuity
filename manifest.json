@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "ChatGPT Thread Continuity",
+  "version": "0.2.3",
+  "description": "Analyze full ChatGPT threads, export local transcripts and file manifests, and prepare generic continuity-packet prompts with measured thread statistics.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "Analyze and export this ChatGPT thread",
+    "default_icon": {
+      "32": "icons/icon-32.svg"
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.svg",
+    "48": "icons/icon-48.svg",
+    "96": "icons/icon-96.svg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "chatgpt-thread-continuity@local",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    },
+    "gecko_android": {
+      "strict_min_version": "142.0"
+    }
+  }
+}
