@@ -62,6 +62,14 @@ bash scripts/package.sh
 
 ## License
 
-**A redistribution/reuse license has not been selected yet.** The repository may be published for viewing and personal installation, but third-party redistribution or modification rights are not granted by a public GitHub repository alone. The owner can add an explicit license later (for example MIT) after deciding the desired terms.
+ChatGPT Thread Continuity is free software licensed under the **GNU General Public License, version 3 or (at your option) any later version** (`GPL-3.0-or-later`).
+
+You may use, study, modify, and redistribute this software under the terms of the GNU GPL.
+
+This software is distributed in the hope that it will be useful, but **WITHOUT ANY WARRANTY**, including the implied warranties of merchantability or fitness for a particular purpose.
+
+See the [LICENSE](LICENSE) file for the complete license text.
+
+Copyright © 2026 — andyprough.
 
 **Compatibility:** Firefox Desktop 140.0 or later (including Mullvad Browser 15.x based on Firefox ESR 140). The manifest declares an Android minimum of 142.0 to satisfy Mozilla compatibility validation, but **Android has not been tested and is not a supported target**. Limit AMO distribution to desktop where configurable.
